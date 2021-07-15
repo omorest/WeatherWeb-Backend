@@ -1,0 +1,25 @@
+{
+  "name": "weatherweb-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omorest/WeatherWeb-Backend.git"
+  },
+  "author": "Oscar Moreira Estevez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/omorest/WeatherWeb-Backend/issues"
+  },
+  "homepage": "https://github.com/omorest/WeatherWeb-Backend#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
