@@ -1,4 +1,4 @@
-const { meterPerSecondToKmPerHour } = require('./utils');
+const { meterPerSecondToKmPerHour } = require('../utils');
 
 function toWeatherInformation(dataWeather) {
 	const { main, description, icon } = dataWeather.weather[0];
