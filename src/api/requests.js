@@ -9,7 +9,7 @@ const getDataWeatherByCity = async (city, country) => {
 	return toWeatherInformation(data)
 }
 
-const getDataWeatherByLatLon = async ({latitude, longitude}) => {
+const getDataWeatherByLatLon = async (latitude, longitude) => {
 	const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${process.env.KEY}`;
 	const res = await fetch(url);
 	const data = await res.json();
