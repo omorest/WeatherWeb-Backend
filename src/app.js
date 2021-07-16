@@ -4,7 +4,7 @@ const { getDataWeatherByCity, getDataWeatherByLatLon } = require('./api/requests
 const app = express()
 
 const corsOptions = {
-  origin: 'http://localhost:8080',
+  origin: 'https://weather-web-front.vercel.app/',
   optionsSuccessStatus: 200
 }
 
