@@ -4,7 +4,7 @@ const { getDataWeatherByCity, getDataWeatherByLatLon } = require('./api/requests
 const app = express()
 
 const corsOptions = {
-  origin: 'http://192.168.1.62:8080',
+  origin: 'http://localhost:8080',
   optionsSuccessStatus: 200
 }
 
