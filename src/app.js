@@ -10,13 +10,13 @@ app.listen(process.env.PORT || 5000, () => {
 })
 
 app.get('/api/location/:city/:country?', async (request, response) => {
-  const {city, country} = request.params;
+  const { city, country } = request.params
   const data = await getDataWeatherByCity(city, country)
-  response.json(data);
+  response.json(data)
 })
 
 app.get('/api/coords/:latitude/:longitude', async (request, response) => {
-  const {latitude, longitude} = request.params;
-  const data = await getDataWeatherByLatLon(latitude, longitude);
-  response.json(data);
+  const { latitude, longitude } = request.params
+  const data = await getDataWeatherByLatLon(latitude, longitude)
+  response.json(data)
 })

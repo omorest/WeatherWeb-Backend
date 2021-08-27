@@ -9,7 +9,9 @@
   "scripts": {
     "test": "jest",
     "start": "node src/app.js",
-    "dev": "NODE_ENV=development nodemon src/app.js"
+    "dev": "NODE_ENV=development nodemon src/app.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
   },
   "repository": {
     "type": "git",
@@ -28,6 +30,10 @@
     "node-fetch": "^2.6.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.12"
+    "nodemon": "^2.0.12",
+    "standard": "^16.0.3"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json"
   }
 }
